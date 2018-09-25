@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    /*
+    Write a function called 'bouncerBlackList'.
+
+    This guy named "Joe" keeps blacking out at the bar that your function,
+    bouncer (from the previous module), is in charge of; thus, management
+    has decided to add him to the "blacklist" -- modify the bouncer function
+    from the previous section so that the person named "Joe" is rejected with
+    an appropriate message 'Go home Joe!', regardless of his age.
+    */
+
+    function bouncerBlackList(name, age) {
+
+        if(name === "Joe"){
+          return 'Go home ' + name + '!';
+        }
+
+        if ( age > 20 ) {
+        	return 'Welcome, ' + name + '!';
+        } else {
+        	return 'Go home, ' + name + '.';
+        }
+
+    }
+
+    console.log(bouncerBlackList("Rex", 21));
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

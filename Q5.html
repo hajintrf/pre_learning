@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    /*
+    Write a function called countChars that accepts two parameters(매개변수): a string and a character.
+    This function should return a number representing the number of times that the character appears in string.
+    To access the first element of a string, you can use the following syntax:
+
+    character에 들어간 문자가 string문자열에 몇 번 이나 들어가는가를 return하라.
+
+    access the element at index 0
+    "hello"[0]; // => "h"
+    "dog"[0]; // => "d"
+
+    HINT: You'll also need to make use of the slice method
+    */
+
+    function countChars(string, character) {
+
+      var count = 0;
+
+      for(var i = 0; i < string.length; i++){
+        if(string[i] === character){
+          count++
+        }
+      }
+
+    return count
+
+    }
+
+    console.log(countChars("hellohh", "l"));
+
+
+
+
+
+    </script>
+  </body>
+</html>

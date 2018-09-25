@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    /*
+    Write a function called counter that, when invoked, always returns a number that is one more than the previous invocation.
+
+    For instance:
+
+    counter(); => 1
+    counter(); => 2
+    counter(); => 3
+
+    HINT: You'll need a variable for this (call it 'count'). Where should the variable be declared?
+    */
+
+    var count = 0; //변수를 함수 안에다 넣으면, 함수를 호출할 떄마다 변수가 0으로 설정됨. 함수안에 있는 변수는 함수밖에서는 없기 떄문에.
+
+    function counter() {
+      count++
+      return count
+    }
+
+    console.log(counter());
+    console.log(counter());
+
+    </script>
+  </body>
+</html>
